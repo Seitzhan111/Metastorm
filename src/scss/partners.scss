@@ -1,0 +1,21 @@
+.partners{
+  background: url(../images/partners/bg.svg) top/cover no-repeat;
+  padding: 141px 0 156px;
+  text-align: center;
+  &__title{
+    margin-bottom: 71px;
+  }
+  &__block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    &-item{
+      flex-basis: 270px;
+      height: 100px;
+      background: rgba(196, 196, 196, 0.42);
+      border: 2px solid rgba(255, 255, 255, 0.58);
+      border-radius: 12px;
+    }
+  }
+}

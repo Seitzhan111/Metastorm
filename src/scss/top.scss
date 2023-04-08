@@ -1,0 +1,37 @@
+
+.top{
+  background: url("../images/top/bg.png") center/cover no-repeat;
+  width: 100%;
+  padding: 351px 0 284px;
+  position: relative;
+  z-index: 0;
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90.64deg, rgba(0, 0, 0, 0.53) 10.09%, rgba(0, 0, 0, 0.56) 46.46%, rgba(0, 0, 0, 0) 92.25%);
+  }
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(358.91deg, #000000 0.98%, rgba(0, 0, 0, 0.71) 15.96%, rgba(0, 0, 0, 0.7) 24.32%, rgba(0, 0, 0, 0) 64.69%);
+  }
+  &__inner{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  &__list::before{
+    max-width: 34px;
+    max-height: 34px;
+  }
+}

@@ -1,0 +1,30 @@
+
+
+.metaverse{
+  padding: 69px 0 141px;
+  text-align: center;
+  background: url("../images/metaverse/bg.jpg") center/cover no-repeat;
+  position: relative;
+  z-index: 0;
+  &__smoke-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  &__smoke-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  &__title{
+    margin-bottom: 21px;
+  }
+  &__subtitle{
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 898px;
+    margin: 0 auto 97px;
+  }
+}

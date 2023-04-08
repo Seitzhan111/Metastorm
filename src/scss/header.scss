@@ -1,0 +1,68 @@
+.header{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
+  backdrop-filter: blur(6px);
+  padding: 21px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+
+  &__navigation{
+    display: flex;
+    align-items: center;
+  }
+  &__logo{
+    width: 80px;
+    height: 77px;
+    margin-right: 72px;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 87px;
+  }
+  &__menu-item{
+    display: flex;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: relative;
+  }
+  &__menu-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    right: 0;
+    background: rgba(255, 255, 255, 0.61);
+    height: 3px;
+    bottom: -18px;
+    transition: all .3s;
+  }
+  &__menu-link:hover::before{
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  &__buttons{
+    display: flex;
+    gap: 23px;
+  }
+  &__button-left{
+    border-radius: 5px;
+    width: 159px;
+    height: 45px;
+    color: inherit;
+    background-color: transparent;
+    border: 2px solid dimgrey;
+
+  }
+  &__button-right{
+    color: #FFFFFF;
+    background: #935243;
+    border-radius: 5px;
+    width: 130px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,19 @@
+.footer{
+  padding-bottom: 66px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__text{
+    margin-right: 31px;
+  }
+  &__social-media{
+    margin: 0;
+  }
+}

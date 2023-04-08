@@ -1,0 +1,86 @@
+.token{
+  position: relative;
+  padding: 145px 0 0;
+  &__inner{
+    position: relative;
+    z-index: 1;
+  }
+  &__inner::before{
+    content: url("../images/token/elem-1.svg");
+    height: 100%;
+    position: absolute;
+    top: -15%;
+    left: -32%;
+  }
+  &__inner::after{
+    content: url("../images/token/MetaStorm.svg");
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    right: -10%;
+  }
+
+  &__title{
+    font-size: 43px;
+    line-height: 62px;
+    text-transform: uppercase;
+    padding-left: 43px;
+    margin-bottom: 28px;
+  }
+  &__smest{
+    display: flex;
+    gap: 0 25px;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
+    border: 2px solid #515050;
+    border-radius: 20px;
+    max-width: 448px;
+    padding: 25px 0 25px 45px;
+    margin-bottom: 46px;
+    &-title{
+      font-weight: 600;
+      font-size: 24px;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+  &__smest > span{
+    display: inherit;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px 0;
+    max-width: 458px;
+    margin-bottom: 28px;
+    &-item{
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+    }
+    &-item::before{
+      content: url("../icons/token/token-icon.svg");
+    }
+  }
+
+}
+.token::before{
+  content: url("../images/token/bg-left.png");
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.token::after{
+  content: url("../images/token/bg-right.png");
+  position: absolute;
+  top: -53px;
+  right: 0;
+  z-index: 0;
+}

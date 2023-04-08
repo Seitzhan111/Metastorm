@@ -1,0 +1,70 @@
+.game{
+  padding: 161px 0 70px;
+  background: linear-gradient(180.3deg, #000000 1.63%, rgba(0, 0, 0, 0.26) 19.46%, rgba(0, 0, 0, 0) 54.49%, rgba(0, 0, 0, 0.46) 88.31%, #000000 106.26%), linear-gradient(90.11deg, rgba(0, 0, 0, 0.6) 1.75%, rgba(0, 0, 0, 0.156) 18.47%, rgba(0, 0, 0, 0) 51.34%, rgba(0, 0, 0, 0.156) 80.65%, rgba(0, 0, 0, 0.6) 99.9%), url("../images/game/bg.svg") center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  &__title{
+    text-align: center;
+    margin-bottom: 58px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 62px;
+  }
+  &__description{
+    margin-top: 13px;
+    &-text{
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &-text:first-child{
+      margin-bottom: 33px;
+    }
+    &-text{
+      margin-bottom: 51px;
+    }
+  }
+  &__block-title{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
+    background: linear-gradient(180deg, #5B2B30 -90.77%, #6B3935 12.11%, #A25B48 97.02%);
+    border-radius: 5.49533px 5.49533px 0px 0px;
+    position: relative;
+    top: 4px;
+  }
+  &__block-title > span {
+    display: inherit;
+  }
+  &__block-box{
+    background: rgba(0, 0, 0, 0.29);
+    border: 3px solid #515050;
+    border-radius: 0px 0px 25px 25px;
+    padding: 28px 73px 31px;
+    margin-bottom: 40px;
+  }
+  &__list{
+    display: flex;
+    gap: 0 25px;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.68);
+    &::before{
+      width: 26px;
+      height: 26px;
+      position: relative;
+      top: -4px;
+
+    }
+  }
+  &__list:last-child{
+    align-items: start;
+    &::before{
+      top: 1px;
+    }
+  }
+}
